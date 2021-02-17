@@ -1,0 +1,13 @@
+
+sudo add-apt-repository universe
+sudo apt install python2
+python2 -V
+
+sudo apt-get install software-properties-common
+sudo apt-get update
+
+curl https://bootstrap.pypa.io/2.7/get-pip.py -o get-pip.py
+
+python2 get-pip.py
+
+pip -V
