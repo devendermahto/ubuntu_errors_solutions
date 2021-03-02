@@ -1,0 +1,93 @@
+devender@2612:~/wifite2$ sudo apt install pyrit
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package pyrit
+
+devender@2612:~/wifite2$ sudo cat /etc/os-release 
+NAME="Ubuntu"
+VERSION="20.04.2 LTS (Focal Fossa)"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 20.04.2 LTS"
+VERSION_ID="20.04"
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+VERSION_CODENAME=focal
+UBUNTU_CODENAME=focal
+
+## Approaching Fix
+i knew that i can fix it by three methods.
+1. By Adding Kali Linux source list in /etc/apt/sources.list
+2. another method is to get the source code and install it by make and sudo make install
+3. or what if i can find an installable package of pyrit (pyrit - A GPGPU-driven WPA/WPA2-PSK key cracker
+)
+
+so i found the installatable .deb package file
+Note: you must know which package you need. by running ```sudo cat /etc/os-release``` we can see that our os is UBUNTU and the version is 20.0.4 also the flavour is Focal Fossa
+
+i locate the package and installed it using ```dpkg -i pyritpackagefile.deb```
+
+
+## where can you find pyrit package
+1. mirror 1
+https://reposcope.com/package/pyrit
+2. mirrro 2
+http://mirror.infomaniak.com/ubuntu/pool/universe/p/pyrit/
+
+## This is how i installed
+devender@2612:~/wifite2$ sudo dpkg -i ~/Downloads/pyrit_0.5.1+git20180801-2ubuntu1_amd64.deb 
+(Reading database ... 230294 files and directories currently installed.)
+Preparing to unpack .../pyrit_0.5.1+git20180801-2ubuntu1_amd64.deb ...
+Unpacking pyrit (0.5.1+git20180801-2ubuntu1) over (0.5.1+git20180801-1) ...
+Setting up pyrit (0.5.1+git20180801-2ubuntu1) ...
+Processing triggers for man-db (2.9.1-1) ...
+devender@2612:~/wifite2$ pyrit
+Pyrit 0.5.1 (C) 2008-2011 Lukas Lueg - 2015 John Mora
+https://github.com/JPaulMora/Pyrit
+This code is distributed under the GNU General Public License v3+
+
+Usage: pyrit [options] command
+
+Recognized options:
+  -b               : Filters AccessPoint by BSSID
+  -e               : Filters AccessPoint by ESSID
+  -h               : Print help for a certain command
+  -i               : Filename for input ('-' is stdin)
+  -o               : Filename for output ('-' is stdout)
+  -r               : Packet capture source in pcap-format
+  -u               : URL of the storage-system to use
+  --all-handshakes : Use all handshakes instead of the best one
+  --aes            : Use AES
+
+Recognized commands:
+  analyze                 : Analyze a packet-capture file
+  attack_batch            : Attack a handshake with PMKs/passwords from the db
+  attack_cowpatty         : Attack a handshake with PMKs from a cowpatty-file
+  attack_db               : Attack a handshake with PMKs from the db
+  attack_passthrough      : Attack a handshake with passwords from a file
+  batch                   : Batchprocess the database
+  benchmark               : Determine performance of available cores
+  benchmark_long          : Longer and more accurate version of benchmark (5 minutes)
+  check_db                : Check the database for errors
+  create_essid            : Create a new ESSID
+  delete_essid            : Delete a ESSID from the database
+  eval                    : Count the available passwords and matching results
+  export_cowpatty         : Export results to a new cowpatty file
+  export_hashdb           : Export results to an airolib database
+  export_passwords        : Export passwords to a file
+  help                    : Print general help
+  import_passwords        : Import passwords from a file-like source
+  import_unique_passwords : Import unique passwords from a file-like source
+  list_cores              : List available cores
+  list_essids             : List all ESSIDs but don't count matching results
+  passthrough             : Compute PMKs and write results to a file
+  relay                   : Relay a storage-url via RPC
+  selftest                : Test hardware to ensure it computes correct results
+  serve                   : Serve local hardware to other Pyrit clients
+  strip                   : Strip packet-capture files to the relevant packets
+  stripLive               : Capture relevant packets from a live capture-source
+  verify                  : Verify 10% of the results by recomputation
+
