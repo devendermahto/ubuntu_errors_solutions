@@ -135,7 +135,17 @@ Type "pocket" in the Search box.
 Click the Toggle Fx71aboutconfig-ToggleButton button next to the extensions.pocket.onSaveRecs preference to toggle its value to false.
 Restart Firefox
 
-## 19. Security/Safe Browsing
+## 19. suppress web push requests for all websites
+
+Go to   about:config
+Look for:   
+dom.webnotifications.enabled
+dom.webnotifications.serviceworker.enabled
+dom.pushconnection.enabled
+dom.push.enabled
+and set it's value to   'false'.
+
+## 20. Security/Safe Browsing
 
 Note: The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally.
 browser.safebrowsing.blockedURIs.enabled: enable the plugin stability blocking (no override or UI)
