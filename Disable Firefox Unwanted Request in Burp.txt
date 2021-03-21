@@ -1,4 +1,0 @@
-# Disable Firefox safebrowsing
-browser.safebrowsing
-
-https://bugzilla.mozilla.org/show_bug.cgi?id=1386565
