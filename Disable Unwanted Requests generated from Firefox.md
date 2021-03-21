@@ -2,186 +2,185 @@
 
 ## 1. Auto-update checking
 
-Click the menu button Fx57menu, click Fx57Addons-icon Add-ons and select Extensions.
-At the top of the tab, click the "Tools for all add-ons" Add-on Tools Icon menu, uncheck Update Add-ons Automatically and then select Reset All Add-ons to Update Automatically. 
+Click the menu button Menu, click Addons-icon Add-ons and select Extensions.<br/>
+At the top of the tab, click the "Tools for all add-ons" Add-on Tools Icon menu, uncheck Update Add-ons Automatically and then select Reset All Add-ons to Update Automatically. <br/>
     
 ## 2. Blocklist updating
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference extensions.blocklist.enabled.
-Observe the Value column of the extensions.blocklist.enabled row.
-If it is set to false then do nothing.
-If it is set to true, double-click on it to set it to false. 
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference extensions.blocklist.enabled.<br/>
+Observe the Value column of the extensions.blocklist.enabled row.<br/>
+If it is set to false then do nothing.<br/>
+If it is set to true, double-click on it to set it to false. <br/>
 
 ## 3. Anti-phishing and malware protection lists updating
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference browser.safebrowsing.downloads.remote.enabled.
-Observe the Value Column of the browser.safebrowsing.downloads.remote.enabled row.
-If it is set to false then do nothing.
-If it is set to true then double-click on it to set it to false. 
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference browser.safebrowsing.downloads.remote.enabled.<br/>
+Observe the Value Column of the browser.safebrowsing.downloads.remote.enabled row.<br/>
+If it is set to false then do nothing.<br/>
+If it is set to true then double-click on it to set it to false. <br/>
 
 ## 4. Tracking protection list updating
 
-Click the menu button Fx57Menu and select Preferences.
-Select the Privacy & Security panel.
-Under Enhanced Tracking Protection, choose the Custom setting.
-Uncheck Tracking content. 
+Click the menu button Fx57Menu and select Preferences.<br/>
+Select the Privacy & Security panel.<br/>
+Under Enhanced Tracking Protection, choose the Custom setting.<br/>
+Uncheck Tracking content. <br/>
     
 ## 5. Firefox Data Collection and Use
 
-Go to about:preferences#privacy
+Go to about:preferences#privacy <br/>
 
-under about:preferences#privacy 
-uncheck all fields
+under about:preferences#privacy <br/>
+uncheck all fields<br/>
 
 ## 6. Deceptive Content and Dangerous Software Protection
 
-under about:preferences#privacy
-uncheck all checkbox
+under about:preferences#privacy<br/>
+uncheck all checkbox<br/>
 
 ## 7. Secure website certificates
 
-Click the menu button Fx57Menu and select Preferences.
-Select the Privacy & Security panel.
+Click the menu button Fx57Menu and select Preferences.<br/>
+Select the Privacy & Security panel.<br/>
 In the Security section under Certificates, uncheck Query OCSP responder servers to confirm the current validity of certificates. 
 
 ## 8. Login breach information
 
-uncheck this too if enabled in privacy settings of firefox
+uncheck this too if enabled in privacy settings of firefox<br/>
 
 ## 9. Link prefetching
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference network.prefetch-next.
-Observe the Value column of the network.prefetch-next row.
-If it is set to false then do nothing.
-If it is set to true, double-click on it to set it to false. 
+
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference network.prefetch-next.<br/>
+Observe the Value column of the network.prefetch-next row.<br/>
+If it is set to false then do nothing.<br/>
+If it is set to true, double-click on it to set it to false. <br/>
 
 
 ## 11. DNS prefetching
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference network.dns.disablePrefetch.
-Observe the Value column of the network.dns.disablePrefetch row.
-If it is set to true then do nothing.
-If it is set to false, double-click on it to set it to true. 
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference network.dns.disablePrefetch.<br/>
+Observe the Value column of the network.dns.disablePrefetch row.<br/>
+If it is set to true then do nothing.<br/>
+If it is set to false, double-click on it to set it to true. <br/>
 
 ## 12. Mozilla content > Experiments or studies
 
-To disable new feature experiments, set messaging-system.rsexperimentloader.enabled to false.
-To disable the running of experiments, set app.normandy.optoutstudies.enabled to false. This is not necessary if app.normandy.enable is also set to false.
-To disable studies, feature rollouts and emergency hotfixes related to Normandy, set app.normandy.enabled to false. 
+To disable new feature experiments, set messaging-system.rsexperimentloader.enabled to false.<br/>
+To disable the running of experiments, set app.normandy.optoutstudies.enabled to false. This is not necessary if app.normandy.enable is also set to false.<br/>
+To disable studies, feature rollouts and emergency hotfixes related to Normandy, set app.normandy.enabled to false. <br/>
     
 ## 13. Snippets
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference browser.aboutHomeSnippets.updateUrl.
-Double-click on it and set its value to a blank string. 
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference browser.aboutHomeSnippets.updateUrl.<br/>
+Double-click on it and set its value to a blank string. <br/>
 
 ## 14. Add-on metadata updating
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference extensions.getAddons.cache.enabled.
-Observe the Value column of the extensions.getAddons.cache.enabled row.
-If it is set to false then do nothing.
-If it is set to true, double-click on it to set it to false. 
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference extensions.getAddons.cache.enabled.<br/>
+Observe the Value column of the extensions.getAddons.cache.enabled row.<br/>
+If it is set to false then do nothing.<br/>
+If it is set to true, double-click on it to set it to false. <br/>
 
 ## 15. Diagnostics
 
-Click the menu button Fx57Menu and select Preferences.
-Select the Privacy & Security panel.
-Uncheck the boxes under the section, Firefox Data Collection and Use. 
-
-In addition, Mozilla will ask a small sample of users to rate their experience with Firefox to get a better insight into the sentiment about the browser. For more information about this see https://wiki.mozilla.org/Advocacy/heartbeat. The rating feature will establish a connection to Mozilla's servers at startup, which you can turn off like this:
-
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-Find the preference app.normandy.enabled.
-Set the preference value to false by double clicking on it. 
+Click the menu button Fx57Menu and select Preferences.<br/>
+Select the Privacy & Security panel.<br/>
+Uncheck the boxes under the section, Firefox Data Collection and Use. <br/>
+In addition, Mozilla will ask a small sample of users to rate their experience with Firefox to get a better insight into the sentiment about the browser. For more information about this see https://wiki.mozilla.org/Advocacy/heartbeat. The rating feature will establish a connection to Mozilla's servers at startup, which you can turn off like this:<br/>
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+Find the preference app.normandy.enabled.<br/>
+Set the preference value to false by double clicking on it. <br/>
 
 ## 16. Network Detection
 
-To disable this feature:
+To disable this feature:<br/>
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-In the about:config page, search for the preference network.captive-portal-service.enabled (for example, you can type portal in the search box above the list and pause while the list is filtered).
-Observe the Value column of the network.captive-portal-service.enabled row.
-If it is set to false then do nothing.
-If it is set to true, double-click on it to set it to false. 
-In the about:config page, search for the preference network.connectivity-service.enabled (for example, you can type connectivity in the search box above the list and pause while the list is filtered).
-Observe the Value column of the network.connectivity-service.enabled row.
-If it is set to false then do nothing.
-If it is set to true, double-click on it to set it to false. 
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+In the about:config page, search for the preference network.captive-portal-service.enabled (for example, you can type portal in the search box above the list and pause while the list is filtered).<br/>
+Observe the Value column of the network.captive-portal-service.enabled row.<br/>
+If it is set to false then do nothing.<br/>
+If it is set to true, double-click on it to set it to false. <br/>
+In the about:config page, search for the preference network.connectivity-service.enabled (for example, you can type connectivity in the search box above the list and pause while the list is filtered).<br/>
+Observe the Value column of the network.connectivity-service.enabled row.<br/>
+If it is set to false then do nothing.<br/>
+If it is set to true, double-click on it to set it to false. <br/>
 
 ## 17. Disable Save to Pocket for Firefox
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-Type "pocket" in the Search box.
-Click the Toggle Fx71aboutconfig-ToggleButton button next to the extensions.pocket.enabled preference to toggle its value to false.
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+Type "pocket" in the Search box.<br/>
+Click the Toggle Fx71aboutconfig-ToggleButton button next to the extensions.pocket.enabled preference to toggle its value to false.<br/>
 
 ## 18. Remove Save to Pocket similar story recommendations
 
-Type about:config in the address bar and press Enter.
-A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.
-Type "pocket" in the Search box.
-Click the Toggle Fx71aboutconfig-ToggleButton button next to the extensions.pocket.onSaveRecs preference to toggle its value to false.
-Restart Firefox
+Type about:config in the address bar and press Enter.<br/>
+A warning page may appear. Click Accept the Risk and Continue to go to the about:config page.<br/>
+Type "pocket" in the Search box.<br/>
+Click the Toggle Fx71aboutconfig-ToggleButton button next to the extensions.pocket.onSaveRecs preference to toggle its value to false.<br/>
+Restart Firefox<br/>
 
 ## 19. suppress web push requests for all websites
 
-Go to   about:config
-Look for:   
-dom.webnotifications.enabled
-dom.webnotifications.serviceworker.enabled
-dom.pushconnection.enabled
-dom.push.enabled
-and set it's value to   'false'.
+Go to   about:config <br/>
+Look for:   <br/>
+dom.webnotifications.enabled<br/>
+dom.webnotifications.serviceworker.enabled <br/>
+dom.pushconnection.enabled <br/>
+dom.push.enabled <br/>
+and set it's value to   'false'. <br/>
 
 ## 20. disable snippets
 
-(1) In a new tab, type or paste about:config in the address bar and press Enter/Return. Click the button promising to be careful or accepting the risk.
-(2) In the search box above the list, type or paste snip and pause while the list is filtered
-(3) The checkbox flips the browser.newtabpage.activity-stream.feeds.snippets preference to false, you could verify that is still set
-(4) Double-click the browser.newtabpage.activity-stream.disableSnippets preference to switch the value from false to true and test whether this makes a difference
+(1) In a new tab, type or paste about:config in the address bar and press Enter/Return. Click the button promising to be careful or accepting the risk. <br/>
+(2) In the search box above the list, type or paste snip and pause while the list is filtered <br/>
+(3) The checkbox flips the browser.newtabpage.activity-stream.feeds.snippets preference to false, you could verify that is still set<br/>
+(4) Double-click the browser.newtabpage.activity-stream.disableSnippets preference to switch the value from false to true and test whether this makes a difference<br/>
 
 ## 21. Disable Get Pocket Requests
 
-go to preference
-about:preferences#home
-and under home tab
-find Firefox Home Content Section
-Uncheck All
+go to preference<br/>
+about:preferences#home <br/>
+and under home tab<br/>
+find Firefox Home Content Section<br/>
+Uncheck All<br/>
 
 ## 22. Security/Safe Browsing
 
 Note: The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally.
 browser.safebrowsing.blockedURIs.enabled: enable the plugin stability blocking (no override or UI)
-browser.safebrowsing.debug: show debugging info from the JavaScript list update code on the command line as long as browser.dom.window.dump.enabled is also enabled
-browser.safebrowsing.id: what SAFEBROWSING_ID in gethashURL and updateURL maps to
-browser.safebrowsing.malware.enabled: enable malware protection (includes unwanted as well)
-browser.safebrowsing.phishing.enabled: enable phishing protection
-browser.safebrowsing.provider.google.gethashURL: server endpoint for completions of malware and phishing lists
-browser.safebrowsing.provider.google.lists: list of tables coming from the Google Safe Browsing service
-browser.safebrowsing.provider.google.reportURL: probably unused
-browser.safebrowsing.provider.google.updateURL: server endpoint for malware and phishing list updates
-browser.safebrowsing.provider.google.lastupdatetime: timestamp (in ms) of when the last list update happened.
-browser.safebrowsing.provider.google.nextupdatetime: timestamp (in ms) of when the list should next be downloaded.
-browser.safebrowsing.reportMalwareMistakeURL: destination for the "This isn't an attack site" button (after ignoring the interstitial warning)
-browser.safebrowsing.reportPhishMistakeURL: destination for the "This isn't a web forgery" button (after ignoring the interstitial warning)
-browser.safebrowsing.reportPhishURL: destination for the "Help | Report Web Forgery" menu item
-urlclassifier.blockedTable: list of tables to use for the plugin stability blocking
-urlclassifier.disallow_completions: list of tables for which we never call gethash
-urlclassifier.gethashnoise: the number of fake entries to add to any gethash calls. Defaul value: 4. Maximum value: 999 (beyond, the Google request fails with HTTP 400).
-urlclassifier.gethash.timeout_ms: the timeout after which gethash requests should be aborted
-urlclassifier.malwareTable: list of tables to use when looking for malware (they need to be named *-malware-* or *-unwanted-*)
-urlclassifier.max-complete-age: the maximum amount of time in seconds that a complete hash will be considered fresh and allowed to match
-urlclassifier.phishTable: list of tables to use when looking for phishing (they need to be named *-phish-*)
-urlclassifier.skipHostnames: comma-separated list of hostnames to exempt from Safe Browsing checks (hidden, only for temporary hotfix purposes)
+browser.safebrowsing.debug: show debugging info from the JavaScript list update code on the command line as long as browser.dom.window.dump.enabled is also enabled<br/>
+browser.safebrowsing.id: what SAFEBROWSING_ID in gethashURL and updateURL maps to<br/>
+browser.safebrowsing.malware.enabled: enable malware protection (includes unwanted as well)<br/>
+browser.safebrowsing.phishing.enabled: enable phishing protection<br/>
+browser.safebrowsing.provider.google.gethashURL: server endpoint for completions of malware and phishing lists<br/>
+browser.safebrowsing.provider.google.lists: list of tables coming from the Google Safe Browsing service<br/>
+browser.safebrowsing.provider.google.reportURL: probably unused<br/>
+browser.safebrowsing.provider.google.updateURL: server endpoint for malware and phishing list updates<br/>
+browser.safebrowsing.provider.google.lastupdatetime: timestamp (in ms) of when the last list update happened.<br/>
+browser.safebrowsing.provider.google.nextupdatetime: timestamp (in ms) of when the list should next be downloaded.<br/>
+browser.safebrowsing.reportMalwareMistakeURL: destination for the "This isn't an attack site" button (after ignoring the interstitial warning)<br/>
+browser.safebrowsing.reportPhishMistakeURL: destination for the "This isn't a web forgery" button (after ignoring the interstitial warning)<br/>
+browser.safebrowsing.reportPhishURL: destination for the "Help | Report Web Forgery" menu item<br/>
+urlclassifier.blockedTable: list of tables to use for the plugin stability blocking<br/>
+urlclassifier.disallow_completions: list of tables for which we never call gethash<br/>
+urlclassifier.gethashnoise: the number of fake entries to add to any gethash calls. Defaul value: 4. Maximum value: 999 (beyond, the Google request fails with HTTP 400).<br/>
+urlclassifier.gethash.timeout_ms: the timeout after which gethash requests should be aborted<br/>
+urlclassifier.malwareTable: list of tables to use when looking for malware (they need to be named *-malware-* or *-unwanted-*)<br/>
+urlclassifier.max-complete-age: the maximum amount of time in seconds that a complete hash will be considered fresh and allowed to match<br/>
+urlclassifier.phishTable: list of tables to use when looking for phishing (they need to be named *-phish-*)<br/>
+urlclassifier.skipHostnames: comma-separated list of hostnames to exempt from Safe Browsing checks (hidden, only for temporary hotfix purposes)<br/>
