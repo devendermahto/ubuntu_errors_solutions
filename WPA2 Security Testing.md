@@ -36,6 +36,7 @@ Interface wlx00c0ca59ef6fmon is too long for linux so it will be renamed to the 
 		(mac80211 station mode vif disabled for [phy2]wlx00c0ca59ef6f)
 
 devender@2612:~$ `iwconfig`
+
 lo        no wireless extensions.
 
 eno1      no wireless extensions.
