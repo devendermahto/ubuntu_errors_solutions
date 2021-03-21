@@ -145,7 +145,14 @@ dom.pushconnection.enabled
 dom.push.enabled
 and set it's value to   'false'.
 
-## 20. Security/Safe Browsing
+## 20. disable snippets
+
+(1) In a new tab, type or paste about:config in the address bar and press Enter/Return. Click the button promising to be careful or accepting the risk.
+(2) In the search box above the list, type or paste snip and pause while the list is filtered
+(3) The checkbox flips the browser.newtabpage.activity-stream.feeds.snippets preference to false, you could verify that is still set
+(4) Double-click the browser.newtabpage.activity-stream.disableSnippets preference to switch the value from false to true and test whether this makes a difference
+
+## 21. Security/Safe Browsing
 
 Note: The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally.
 browser.safebrowsing.blockedURIs.enabled: enable the plugin stability blocking (no override or UI)
