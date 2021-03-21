@@ -152,7 +152,15 @@ and set it's value to   'false'.
 (3) The checkbox flips the browser.newtabpage.activity-stream.feeds.snippets preference to false, you could verify that is still set
 (4) Double-click the browser.newtabpage.activity-stream.disableSnippets preference to switch the value from false to true and test whether this makes a difference
 
-## 21. Security/Safe Browsing
+## 21. Disable Get Pocket Requests
+
+go to preference
+about:preferences#home
+and under home tab
+find Firefox Home Content Section
+Uncheck All
+
+## 22. Security/Safe Browsing
 
 Note: The Safe Browsing feature in Firefox has been renamed to Phishing Protection, but it's still known as Safe Browsing internally.
 browser.safebrowsing.blockedURIs.enabled: enable the plugin stability blocking (no override or UI)
