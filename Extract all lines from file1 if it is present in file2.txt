@@ -1,0 +1,10 @@
+Suppose you have a large file (mainfile.csv) and you want only records/rows that are present in keyvaluetofind.txt
+
+
+grep -w -F -f keyvaluetofind.txt mainfile.csv | tee -a newfile.csv
+
+also
+
+To find lines in genelist.txt that aren't in newdata.txt:
+
+grep -v -w -F -f <(sed -E -e 's/(\t|  +).*//' newdata.txt) genelist.txt
