@@ -1,0 +1,10 @@
+<==ORIGINAL FILE==>
+devender@2612:~/Downloads$ cat mlc-part2.csv | wc -l
+66354
+
+Note: here -k flag is used to set the field number for sorting data in order
+
+devender@2612:~/Downloads$ cat mlc-part2.csv | sort -s -k 3,3 -u | sort -r | wc -l
+46057
+
+devender@2612:~/Downloads$ cat mlc-part2.csv | sort -s -k 3,3 -u | sort -r | tee -a MLCPart2-DataUnique.csv
