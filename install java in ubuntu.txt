@@ -1,0 +1,24 @@
+https://www.youtube.com/watch?v=hEjgiasxQUc
+
+Download debian package of java jdk (.deb) from below link you need to create an account on oracle for downloading no credit card info. needed
+
+
+https://www.oracle.com/java/technologies/downloads/
+
+devender@2612:~/Downloads$ sudo dpkg -i jdk-16.0.2_linux-x64_bin.deb 
+[sudo] password for devender:     
+Selecting previously unselected package jdk-16.0.2.
+(Reading database ... 286090 files and directories currently installed.)
+Preparing to unpack jdk-16.0.2_linux-x64_bin.deb ...
+Unpacking jdk-16.0.2 (16.0.2-1) ...
+Setting up jdk-16.0.2 (16.0.2-1) ...
+devender@2612:~/Downloads$ ls /usr/lib/jvm
+jdk-16.0.2     
+devender@2612:~/Downloads$ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.2/bin/java 1
+update-alternatives: using /usr/lib/jvm/jdk-16.0.2/bin/java to provide /usr/bin/java (java) in auto mode
+devender@2612:~/Downloads$ sudo update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk-16.0.2/bin/javac 1
+devender@2612:~/Downloads$ java --version
+java 16.0.2 2021-07-20
+Java(TM) SE Runtime Environment (build 16.0.2+7-67)
+Java HotSpot(TM) 64-Bit Server VM (build 16.0.2+7-67, mixed mode, sharing)
+devender@2612:~/Downloads$ 
