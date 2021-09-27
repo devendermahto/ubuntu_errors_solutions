@@ -86,3 +86,151 @@ devender@2612:~$ cat testmega.json
 
 convert it into csv
 devender@2612:~$ cat testmega.json | jq -r '[.id,.megaCabsBookingNo,.serviceCityId,.financialYearId,.currentBookingStatusType,.bookingViaType,.custId,.custName,.custMobile,.custAlternateNo,.custEmail,.pickUpDateTime,.pickUpAddress,.pickUpZoneId,.pickUpZoneName,.pickUpSuburb,.pickUpNearestLandmark,.pickUpLat,.pickUpLng,.destAddress,.destSuburb,.destNearestLandmark,.destLat,.destLng,.bookedFromIpAddress,.packageId,.packageName,.isCompanyBooking,.corporateClientId,.companyName,.carTypeId,.paymentModeType,.canceledOn,.cancelReason,.cancelReasonRemarks,.canceledById,.canceledByUserType,.createdOn,.createdById,.createdByUserType,.serviceCityName,.financialYear,.carType,.rideType,.isHighRisk,.isVip,.isInternational,.loyaltyProgramType,.loyaltyProgramNumber,.corporateBookingTokenNumber,.integratorId,.integratorName,.remark,.bookingViaDeviceType,.isShortDistance,.viaSms,.alertToTMS,.isConvenienceApply,.imageUrl,.biddingTime,.websiteRefererId,.websiteRefererUrl,.thirdPartySettings,.airportBookingRemarks,.mmtReferenceId,.isMmt,.thirdpartyBookingRequest,.airportTerminal,.bookingTotalFare,.bookingTotalDistance,.bookingClientAdvance,.isPartPayment,.isFlatNightCharges,.flatNightCharges,.estimatedEndTime,.isOnTripAssigned,.custAlternateEmail,.isMoveToComplete,.isAssignLogoutDriver] | @csv'
+
+=================================================================================================================================
+SAMPLE DATA 2 to csv
+
+devender@2612:~$ cat drivertestmegacab.json | jq -r '.'
+{
+  "_index": "driver",
+  "_type": "driver",
+  "_id": "4",
+  "_score": 1,
+  "_source": {
+    "id": 4,
+    "userId": 42,
+    "sapId": "BN_1275",
+    "isSapData": true,
+    "fullName": "Jabbar",
+    "gender": "M",
+    "dob": "1979-07-20",
+    "mobile": "9686349007",
+    "addressLine": "#311  Near Siddaganga School 6th Cross Gangondanahalli Mysore Road Bangalore-560039",
+    "city": null,
+    "pincode": null,
+    "state": null,
+    "education": null,
+    "experience": null,
+    "langKnown": null,
+    "licenseNo": "KA03 20060029103",
+    "badge": null,
+    "remarks": null,
+    "fathersName": "Noorjan",
+    "phone1": null,
+    "phone2": null,
+    "avatarUrl": null,
+    "avatarUrlContentType": null,
+    "licenseExpiry": null,
+    "dailySubscriptionAmt": null,
+    "mainCabNo": null,
+    "otherCabNo": null,
+    "ratingSum": null,
+    "ratingCount": 0,
+    "ratingAvg": 0,
+    "createdOn": "2016-09-16T21:01:27+05:30",
+    "createdById": null,
+    "isDeleted": false,
+    "deletedOn": null,
+    "deletedById": null,
+    "aggregator": null,
+    "serviceCity": {
+      "id": 4,
+      "name": "Bangalore",
+      "address": "Opp. Country Club, Baglur Cross, Yelahanka, Bengaluru North-562149.",
+      "companyName": "Bengaluru Mega Cabs Pvt. Ltd.,",
+      "oldCompanyName": null,
+      "gstNo": "GST No: 29AAECB9348P1ZT",
+      "shortDistance": 8,
+      "invoiceLabel": "GST on fare 12%.",
+      "biddingDurationSecondsRidelater": null,
+      "biddingDurationSecondsRidenow": null,
+      "serviceDescription": "Radio Taxi Services",
+      "sacCode": "996412",
+      "placeOfSupply": "Bangalore",
+      "cinNo": "U63000DL2012PTC232126",
+      "registeredOfficeAddress": "G-155(Basement), Kalkaji, New Delhi - 110019",
+      "website": "https://www.megacabs.com/",
+      "digitalSignatureUrl": "https://media.megacabs.com/images/authorised_signatory.png",
+      "digitalSignatureUrlContentType": "image/jpeg",
+      "oldAddress": null,
+      "oldCinNo": null,
+      "oldGstNo": null,
+      "oldInvoiceLabel": null,
+      "isIgstApplyOn": null,
+      "createdOn": "2016-04-01T00:00:00+05:30",
+      "createdById": 3,
+      "isDeleted": false,
+      "deletedOn": null,
+      "deletedById": null,
+      "cityCode": "BN",
+      "aggregator": {
+        "id": 3,
+        "userId": 35,
+        "sapGlCode": "SAP-10002",
+        "companyName": "Bengaluru Mega Cabs Pvt Ltd.",
+        "contactPersonName": "Sandeep",
+        "mobile": "9856348790",
+        "email": "sandeep@aquevix.com",
+        "addressLine": "L-80, Lajpat Nagar II, Lajpat Nagar",
+        "city": "new delhi",
+        "state": "delhi",
+        "pincode": "110024",
+        "cinNo": "82682347534",
+        "panNo": "PFD5363G",
+        "serviceTaxNo": "SEV00486",
+        "createdOn": "2016-03-31T20:40:00+05:30",
+        "createdById": 3,
+        "phone1": "2563463",
+        "phone2": "2563464",
+        "isMegaCabsCompany": true,
+        "deletedOn": null,
+        "isDeleted": false,
+        "deletedById": null
+      }
+    },
+    "driverType": {
+      "id": 21,
+      "name": "ANY",
+      "createdOn": "2018-09-21T09:40:00+05:30",
+      "createdById": 3,
+      "isDeleted": false,
+      "deletedOn": null,
+      "deletedById": null,
+      "isSubscription": false
+    },
+    "megacabsRating": 5,
+    "deviceId": null,
+    "newDeviceId": null,
+    "lastLoginId": null,
+    "currentOnlineId": null,
+    "isApplyTermsCondition": false,
+    "isAvailable": true,
+    "driverBlockCategory": null,
+    "sapDriverCode": "70854",
+    "sapRevenueModelName": "SCO",
+    "badgeExpiry": null,
+    "displayCardNo": null,
+    "displayCardNoExpiry": null,
+    "policeVerificationCode": null,
+    "policeVerificationDate": null,
+    "policeVerificationExpiry": null,
+    "bangDriverId": null,
+    "panCardNo": null,
+    "driverAssignedDate": null
+  }
+}
+
+
+devender@2612:~$ cat drivertestmegacab.json | jq -r '._source | [."id",."serviceCity".name] | @csv '
+
+above example is simplest idea
+
+devender@2612:~$ cat drivertestmegacab.json | jq -r '._source | [."id",."userId",."sapId",."isSapData",."fullName",."gender",."dob",."mobile",."addressLine",."city",."pincode",."state",."education",."experience",."langKnown",."licenseNo",."badge",."remarks",."fathersName",."phone1",."phone2",."avatarUrl",."avatarUrlContentType",."licenseExpiry",."dailySubscriptionAmt",."mainCabNo",."otherCabNo",."ratingSum",."ratingCount",."ratingAvg",."createdOn",."createdById",."isDeleted",."deletedOn",."deletedById",."aggregator",."serviceCity".name,."serviceCity".address,."serviceCity".companyName,."serviceCity".oldCompanyName,."serviceCity".gstNo,."serviceCity".shortDistance,."serviceCity".invoiceLabel,."serviceCity".biddingDurationSecondsRidelater,."serviceCity".biddingDurationSecondsRidenow,."serviceCity".serviceDescription,."serviceCity".sacCode,."serviceCity".placeOfSupply,."serviceCity".cinNo,."serviceCity".registeredOfficeAddress,."serviceCity".website,."serviceCity".digitalSignatureUrl,."serviceCity".digitalSignatureUrlContentType,."serviceCity".oldAddress,."serviceCity".oldCinNo,."serviceCity".oldGstNo,."serviceCity".oldInvoiceLabel,."serviceCity".isIgstApplyOn,."serviceCity".createdOn,."serviceCity".createdById,."serviceCity".isDeleted,."serviceCity".deletedOn,."serviceCity".deletedById,."serviceCity".cityCode] | @csv '
+
+next version
+
+devender@2612:~$ head -n 4 '/media/devender/GeekPlanet/Data Archive/megacabs/Mega Cab India-megacab/driver.json' | jq . | jq -r '._source | [."id",."userId",."sapId",."isSapData",."fullName",."gender",."dob",."mobile",."addressLine",."city",."pincode",."state",."education",."experience",."langKnown",."licenseNo",."badge",."remarks",."fathersName",."phone1",."phone2",."avatarUrl",."avatarUrlContentType",."licenseExpiry",."dailySubscriptionAmt",."mainCabNo",."otherCabNo",."ratingSum",."ratingCount",."ratingAvg",."createdOn",."createdById",."isDeleted",."deletedOn",."deletedById",."aggregator",."serviceCity".name,."serviceCity".address,."serviceCity".companyName,."serviceCity".oldCompanyName,."serviceCity".gstNo,."serviceCity".shortDistance,."serviceCity".invoiceLabel,."serviceCity".biddingDurationSecondsRidelater,."serviceCity".biddingDurationSecondsRidenow,."serviceCity".serviceDescription,."serviceCity".sacCode,."serviceCity".placeOfSupply,."serviceCity".cinNo,."serviceCity".registeredOfficeAddress,."serviceCity".website,."serviceCity".digitalSignatureUrl,."serviceCity".digitalSignatureUrlContentType,."serviceCity".oldAddress,."serviceCity".oldCinNo,."serviceCity".oldGstNo,."serviceCity".oldInvoiceLabel,."serviceCity".isIgstApplyOn,."serviceCity".createdOn,."serviceCity".createdById,."serviceCity".isDeleted,."serviceCity".deletedOn,."serviceCity".deletedById,."serviceCity".cityCode, ."serviceCity".aggregator.id,."serviceCity".aggregator.userId,."serviceCity".aggregator.sapGlCode,."serviceCity".aggregator.companyName,."serviceCity".aggregator.contactPersonName,."serviceCity".aggregator.mobile,."serviceCity".aggregator.email,."serviceCity".aggregator.addressLine,."serviceCity".aggregator.city,."serviceCity".aggregator.state,."serviceCity".aggregator.pincode,."serviceCity".aggregator.cinNo,."serviceCity".aggregator.panNo,."serviceCity".aggregator.serviceTaxNo,."serviceCity".aggregator.createdOn,."serviceCity".aggregator.createdById,."serviceCity".aggregator.phone1,."serviceCity".aggregator.phone2,."serviceCity".aggregator.isMegaCabsCompany,."serviceCity".aggregator.deletedOn,."serviceCity".aggregator.isDeleted,."serviceCity".aggregator.deletedById,."driverType"."id",."driverType"."name", ."driverType"."createdOn",."driverType"."createdById",."driverType"."isDeleted",."driverType"."deletedOn",."driverType"."deletedById",."driverType"."isSubscription"] | @csv' 
+
+complete
+
+devender@2612:~$ head -n 1 '/media/devender/GeekPlanet/Data Archive/megacabs/Mega Cab India-megacab/driver.json' | jq . | jq -r '._source | [."id",."userId",."sapId",."isSapData",."fullName",."gender",."dob",."mobile",."addressLine",."city",."pincode",."state",."education",."experience",."langKnown",."licenseNo",."badge",."remarks",."fathersName",."phone1",."phone2",."avatarUrl",."avatarUrlContentType",."licenseExpiry",."dailySubscriptionAmt",."mainCabNo",."otherCabNo",."ratingSum",."ratingCount",."ratingAvg",."createdOn",."createdById",."isDeleted",."deletedOn",."deletedById",."aggregator",."serviceCity"."id",."serviceCity"."name",."serviceCity"."address",."serviceCity"."companyName",."serviceCity"."oldCompanyName",."serviceCity"."gstNo",."serviceCity".shortDistance,."serviceCity".invoiceLabel,."serviceCity".biddingDurationSecondsRidelater,."serviceCity".biddingDurationSecondsRidenow,."serviceCity".serviceDescription,."serviceCity".sacCode,."serviceCity".placeOfSupply,."serviceCity".cinNo,."serviceCity".registeredOfficeAddress,."serviceCity".website,."serviceCity".digitalSignatureUrl,."serviceCity".digitalSignatureUrlContentType,."serviceCity".oldAddress,."serviceCity".oldCinNo,."serviceCity".oldGstNo,."serviceCity".oldInvoiceLabel,."serviceCity".isIgstApplyOn,."serviceCity".createdOn,."serviceCity".createdById,."serviceCity".isDeleted,."serviceCity".deletedOn,."serviceCity".deletedById,."serviceCity".cityCode, ."serviceCity".aggregator.id,."serviceCity".aggregator.userId,."serviceCity".aggregator.sapGlCode,."serviceCity".aggregator.companyName,."serviceCity".aggregator.contactPersonName,."serviceCity".aggregator.mobile,."serviceCity".aggregator.email,."serviceCity".aggregator.addressLine,."serviceCity".aggregator.city,."serviceCity".aggregator.state,."serviceCity".aggregator.pincode,."serviceCity".aggregator.cinNo,."serviceCity".aggregator.panNo,."serviceCity".aggregator.serviceTaxNo,."serviceCity".aggregator.createdOn,."serviceCity".aggregator.createdById,."serviceCity".aggregator.phone1,."serviceCity".aggregator.phone2,."serviceCity".aggregator.isMegaCabsCompany,."serviceCity".aggregator.deletedOn,."serviceCity".aggregator.isDeleted,."serviceCity".aggregator.deletedById,."driverType"."id",."driverType"."name", ."driverType"."createdOn",."driverType"."createdById",."driverType"."isDeleted",."driverType"."deletedOn",."driverType"."deletedById",."driverType"."isSubscription",."megacabsRating",."deviceId",."newDeviceId",."lastLoginId",."currentOnlineId",."isApplyTermsCondition",."isAvailable",."driverBlockCategory",."sapDriverCode",."sapRevenueModelName",."badgeExpiry",."displayCardNo",."displayCardNoExpiry",."policeVerificationCode",."policeVerificationDate",."policeVerificationExpiry",."bangDriverId",."panCardNo",."driverAssignedDate"] | @csv' 
