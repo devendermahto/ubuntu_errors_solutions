@@ -1,0 +1,12 @@
+# TO SPLIT A FILE BY LINE NUMBERS, CHANGE --additional-suffix= value from .csv to your file extension like .txt and also change -l 1000 to no. of lines you want to break your file in.
+
+ 
+split -d -l 1000 --additional-suffix=.csv job-seeker-naukri-frm-india3-560523-Data_14.csv job-seeker-naukri-frm-india3-560523-Data_14_
+
+this will generate files
+like
+job-seeker-naukri-frm-india3-560523-Data_14_00.csv
+job-seeker-naukri-frm-india3-560523-Data_14_02.csv
+job-seeker-naukri-frm-india3-560523-Data_14_03.csv
+
+etc. and each file will contain 1000 lines
