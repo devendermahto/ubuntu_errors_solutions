@@ -1,0 +1,35 @@
+sudo apt update
+sudo apt install tightvncserver
+vncserver -kill :1
+vncserver
+
+SET PASSWORD HERE
+
+NOW ADD IN STARTUP
+sudo nano /etc/systemd/system/vncserver@.service
+
+PASTE THIS
+
+[Unit]
+Description=VNC Server for %i
+After=syslog.target network.target
+
+[Service]
+Type=forking
+User=myadsmantra
+PAMName=login
+PIDFile=/home/myadsmantra/.vnc/%H:%i.pid
+ExecStartPre=-/usr/bin/vncserver -kill :%i > /dev/null 2>&1 || :
+ExecStart=/usr/bin/vncserver -geometry 1280x1024 -localhost :%i
+ExecStop=/usr/bin/vncserver -kill :%i
+
+[Install]
+WantedBy=multi-user.target
+
+ctrl+x and save it
+
+sudo systemctl daemon-reload
+
+START VNC AT SYSTEM BOOT
+
+sudo systemctl enable --now vncserver@1.service
