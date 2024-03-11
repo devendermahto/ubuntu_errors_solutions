@@ -1,0 +1,48 @@
+I WANT TO INSTALL VNC SERVER ON MY CENTOS SERVER 
+
+Step 1.
+sudo yum install tigervnc-server -y
+
+Step 2.
+touch ~/.Xauthority
+
+Step 3.
+vncserver
+
+WARNING: vncserver has been replaced by a systemd unit and is now considered deprecated and removed in upstream.
+Please read /usr/share/doc/tigervnc/HOWTO.md for more information.
+
+You will require a password to access your desktops.
+
+Password:
+Verify:
+Would you like to enter a view-only password (y/n)? n
+A view-only password is not used
+xauth:  file /root/.Xauthority does not exist
+
+New 'server.example.com:1 (mailitbro)' desktop is server.example.com:1
+
+Creating default startup script /root/.vnc/xstartup
+Creating default config /root/.vnc/config
+Starting applications specified in /root/.vnc/xstartup
+Log file is /root/.vnc/server.example.com:1.log
+
+Step 4.
+sudo systemctl enable vncserver@:1.service
+
+Step 5.
+yum install firewalld
+
+Step 6.
+sudo systemctl unmask firewalld
+sudo systemctl enable firewalld
+sudo systemctl start firewalld
+
+Step 7.
+sudo firewall-cmd --permanent --zone=public --add-service=vnc-server
+sudo firewall-cmd --reload
+or
+sudo iptables -I INPUT -p tcp --dport 5901 -j ACCEPT
+
+Step 8.
+reboot
