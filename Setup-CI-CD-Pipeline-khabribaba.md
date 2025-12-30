@@ -3160,8 +3160,10 @@ ini_set('session.gc_maxlifetime', 14400); // 4 hours
 // Ensure sessions directory exists and is writable
 if (!is_dir('sessions')) {
     mkdir('sessions',
+```
 
-# **Complete Docker + PHP + CI/CD Guide for khabribaba.com**
+
+# **Complete Docker + PHP + CI/CD Guide for khabribaba.com When You are Developing PHP in Docker Environment Here is the Starting Point for full Production grade Development**
 
 ## **📋 Docker-Specific Table of Contents**
 1. **Why Docker for PHP?** - Benefits over traditional deployment
